@@ -19,7 +19,6 @@
             margin: 20px auto; /* Центрирование контейнера */
             border-radius: 20px; /* Скругляем углы контейнера */
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень для красоты */
-
         }
 
         /* Сам iframe */
@@ -30,7 +29,8 @@
             width: 750px; /* Ширина всего iframe */
             height: 599px; /* Высота всего iframe */
             border: none; /* Убираем рамки */
-            border-radius: 20px; /* Скругляем углы iframe *
+            border-radius: 20px; /* Скругляем углы iframe */
+            pointer-events: none; /* Отключаем взаимодействие с iframe */
         }
     </style>
 </head>
