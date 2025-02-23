@@ -2,14 +2,49 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Siski</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Встроенный сайт с выделенной областью</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        /* Контейнер для управления расположением iframe */
+        .iframe-container {
+            position: relative;
+            width: 700px; /* Установи ширину для отображаемой области */
+            height: 300px; /* Установи высоту для отображаемой области */
+            overflow: hidden; /* Скрыть всё, что за пределами контейнера */
+            margin: 20px auto; /* Центрирование контейнера */
+            border-radius: 20px; /* Скругляем углы контейнера */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень для красоты */
+
+        }
+
+        /* Сам iframe */
+        iframe {
+            position: absolute;
+            top: -50px; /* Смещаем вверх для показа нужной области */
+            left: -10px; /* Смещаем влево для показа нужной области */
+            width: 750px; /* Ширина всего iframe */
+            height: 599px; /* Высота всего iframe */
+            border: none; /* Убираем рамки */
+            border-radius: 20px; /* Скругляем углы iframe *
+        }
+    </style>
 </head>
 <body>
-    <div id="main">
-        <h1>спиоск игр</h1>
 
+    <h1>Отображение только выделенной области</h1>
+
+    <!-- Контейнер с отступами для iframe -->
+    <div class="iframe-container">
+        <!-- Встроенный сайт -->
+        <iframe src="https://1wpwt.com/casino/play/1play_1play_luckyjet"></iframe>
     </div>
+
+    <p>Это мой контент под встроенным сайтом.</p>
+
 </body>
+</html>
